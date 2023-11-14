@@ -3,6 +3,7 @@
 const buttonElement = document.querySelector('button');
 
 
+
 buttonElement.addEventListener('click', function(){
 
     // console.log('inizio funzione di callback');
@@ -28,6 +29,8 @@ buttonElement.addEventListener('click', function(){
     }
 
     console.log(parseFloat(ticketPrice.toFixed(2)));
+
+    document.getElementById('ticket-price').innerHTML = 'Price: ' + ticketPrice.toFixed(2) + '&dollar;'
 
     // console.log('fine funzione di callback');
 });
